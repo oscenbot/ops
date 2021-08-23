@@ -67,6 +67,9 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: spec.nodeName
+          envFrom:
+            - secretRef:
+                name: grafana
           image: grafana/agent:v0.18.2
           imagePullPolicy: IfNotPresent
           name: agent
