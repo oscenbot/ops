@@ -11,8 +11,11 @@ spec:
   sourceRepos:
     - '*'
   destinations:
-    - '*'
+    - server: '*'
+      namespace: '*'
   clusterResourceWhitelist:
-    - '*'
+    - group: '*'
+      kind: '*'
   namespaceResourceWhitelist:
-    - '*'
+    - group: '*'
+      kind: '*'
